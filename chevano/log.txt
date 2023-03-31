@@ -1,0 +1,4 @@
+1) npx create-react-app chevano
+2) Create files such as components, and Pages
+2) npm install react-router-dom for { Link, Router }
+3)

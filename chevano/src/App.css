@@ -1,0 +1,459 @@
+.heading {
+    font-family: 'Lobster', cursive;
+}
+/*** Navbar ****/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Raleway:wght@800&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f7fff7;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 30px -20px;
+
+  /*box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;*/
+}
+
+.logo {
+  font-family: 'Tilt Prism', cursive;
+  color: red;
+  font-size: 32px;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  width: 75%;
+}
+
+.nav-links li {
+  color: red;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-family: 'Shantell Sans', cursive;
+}
+
+.nav-links li:hover {
+  padding: 17px 34px;
+  background-color: green;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 15%;
+}
+.hero h1 {
+  text-align: center;
+  font-size: 80px;
+}
+.mobile-menu-icon {
+  display: none;
+}
+button {
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  background: none;
+}
+@media (max-width: 768px) {
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    left: 0;
+    top: 10%;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    background-color: white;
+  }
+  ul li {
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    color: red;
+  }
+  .mobile-menu-icon {
+    position: absolute;
+    display: block;
+    right: 20px;
+  }
+  .hero h1 {
+    font-size: 50px;
+  }
+}
+
+/**** Home ****/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@100&family=Tinos&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.intro {
+    /* text-align: center; */
+    margin: 10px;
+    font-family: "Alkatra", cursive;
+    font-size: 36px;
+    line-height: 2;
+    margin: 25px;
+    margin-top: 100px;
+    color: white;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+h1,h2,h3 {
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+}
+
+h1{
+  font-weight: bold;
+}
+
+p {
+  font-weight: normal;
+  font-family: 'Tinos', serif;
+}
+
+.home-image {
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("./images/cover4.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+
+/* @media( max-width: 1023px ) {
+  .intro {
+    margin-left: 150px;
+  }
+} */
+
+/**** Contacts *****/
+
+._container {
+    min-height: 70vh;
+    margin: 25px 50px 50px 50px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px 60px 40px 40px;
+    position: relative;
+}
+
+.left-side {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.vl {
+    display: inline-block;
+    border-left: 3px solid black;
+    height: 400px;
+    position: absolute;
+    left: 25%;
+    bottom: 15%;
+}
+
+.right-side {
+    display: inline-block;
+    width: 50%;
+    height: 300px;
+    position: absolute;
+    left: 40%;
+    bottom: 40%;
+}
+
+
+.input-box {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 10px 30px 10px 0;
+}
+
+.field {
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font: 15px/1 'Open Sans', sans-serif;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  max-width: 500px;
+  background-color: #ddd;
+  border: none;
+  padding: 10px 11px 11px 11px;
+  border-radius: 3px;
+  box-shadow: none;
+  outline: none;
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+.details {
+    width: 200px;
+    height: 100px;
+}
+@media ( max-width: 1024px ) {
+
+    ._container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        min-height: 100vh;
+        width: 100%;
+        border-radius: 6px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        position: static;
+        margin: 12.5px 25px 25px 25px;
+    }
+
+    .left-side {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+
+        position: static;
+    }
+
+    .vl {
+        display: none;
+    }
+
+    .right-side {
+        display: block;
+        width: 50%;
+        height: 500px;
+        position: static;
+    }
+
+    .details {
+        margin-right: 25px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    ._container {
+        min-width: 70%;
+        min-height: 1400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .left-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .details {
+        margin-bottom: 25px;
+    }
+}
+
+  /**** Footer *****/
+  footer {
+    position: fixed;
+    left: 0%;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+
+  /**** About ****/
+  ._center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    width: 90%;
+    margin: 50px 100px;
+  }
+
+  .position {
+    position: relative;
+    margin: 50px;
+  }
+
+  .chef-pic {
+    width: 100%;
+  }
+
+  .right {
+    position: absolute;
+    left: 60%;
+    top: 5rem;
+  }
+
+  .left {
+    width: 30%;
+  }
+
+  /* Catering */
+  
+  .container_ {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+  }
+
+  .card_{
+    background: white;
+    width: 220px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 1px solid grey;
+  }
+
+  .card-image_ {
+    background-color: aqua;
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .dish-1 {
+    background-image: url("https://thumbs.dreamstime.com/b/oxtail-curry-rice-2518644.jpg");
+  }
+
+  .dish-2 {
+    background-image: url("https://gracefoods.com/images/Recipes2017/cropped-Curried--oat.jpg");
+  }
+
+  .dish-3 {
+    background-image: url("https://www.lifehabi.com/recipes/jamaica/wp-content/uploads/2020/03/Fried-Chicken-678x422.jpg");
+  }
+
+  .dish-4 {
+    background-image: url("https://media.istockphoto.com/id/538643574/photo/spicy-grilled-jerk-chicken.jpg?s=612x612&w=0&k=20&c=A5bzNuietYkn1suqd83hm4YVNRdl5xLWYNmQ4sv_5x0=");
+  }
+
+  .dish-5 {
+    background-image: url("https://media.istockphoto.com/id/513800730/photo/ackee-and-saltfish-jamaican-cuisine.jpg?s=612x612&w=0&k=20&c=y2e1zbjtj3Be7fJVghwaWGpOG-M-mQKOWhTpNPD1gbM=");
+  }
+
+  .dish-6 {
+    background-image: url("https://www.blackfoodie.co/wp-content/uploads/2016/04/Screen-Shot-2016-04-29-at-6.10.10-PM.png");
+  }
+
+  .card-heading_ {
+    font-weight: bold;
+    font-size: 26px;
+    padding: 10px;
+  }
+
+  .card-description_ {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .card-price_ {
+    color: grey;
+    font-size: 12px;
+    padding: 5px;
+  }
+  
+  ::selection {
+    background-color: red;
+  }
+
+  /* Home page Video tag */
+  .main {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  /* .overlay {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+  } */
